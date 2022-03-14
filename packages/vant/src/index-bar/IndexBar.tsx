@@ -203,6 +203,7 @@ export default defineComponent({
           setRootScrollTop(getRootScrollTop() - props.stickyOffsetTop);
         }
 
+        activeAnchor.value = match.index;
         emit('select', match.index);
       }
     };
